@@ -1,30 +1,31 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { Features } from './components/Features';
+import { IndustryTabs } from './components/IndustryTabs';
+import { VoiceDemo } from './components/VoiceDemo';
+import { Steps } from './components/Steps';
+import { Comparison } from './components/Comparison';
+import { Testimonials } from './components/Testimonials';
+import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
-import { Home } from './pages/Home';
-import { Solutions } from './pages/Solutions';
-import { Industries } from './pages/Industries';
-import { Pricing } from './pages/Pricing';
-import { About } from './pages/About';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden flex flex-col">
-        <Header />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/solutions" element={<Solutions />} />
-            <Route path="/industries" element={<Industries />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <IndustryTabs />
+        <VoiceDemo />
+        <Steps />
+        <Comparison />
+        <Testimonials />
+        <FAQ />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

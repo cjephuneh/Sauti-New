@@ -1,6 +1,5 @@
 import React from 'react';
 import { Sparkles, Instagram, Facebook, Youtube, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -9,12 +8,12 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
             {/* Logo Section */}
             <div className="text-left w-full md:w-auto">
-                <Link to="/" className="flex items-center gap-2 cursor-pointer mb-4">
+                <div className="flex items-center gap-2 cursor-pointer mb-4">
                     <div className="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center">
                         <Sparkles className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-xl font-bold text-slate-900 tracking-tight">Sauti AI</span>
-                </Link>
+                </div>
                 <p className="text-slate-500 text-sm max-w-xs">
                     Empowering African businesses with next-generation AI voice automation.
                 </p>
@@ -22,10 +21,10 @@ export const Footer: React.FC = () => {
 
             {/* Links */}
             <div className="flex gap-8 text-sm font-medium text-slate-600">
-                <Link to="/solutions" className="hover:text-primary-600 transition-colors">Solutions</Link>
-                <Link to="/industries" className="hover:text-primary-600 transition-colors">Industries</Link>
-                <Link to="/pricing" className="hover:text-primary-600 transition-colors">Pricing</Link>
-                <Link to="/about" className="hover:text-primary-600 transition-colors">About</Link>
+                <a href="#" className="hover:text-primary-600 transition-colors">Fintech</a>
+                <a href="#" className="hover:text-primary-600 transition-colors">Logistics</a>
+                <a href="#" className="hover:text-primary-600 transition-colors">Tourism</a>
+                <a href="#" className="hover:text-primary-600 transition-colors">Agri-Tech</a>
             </div>
         </div>
 
